@@ -11,26 +11,18 @@ void GameFunctions::gotoxy(int x, int y)
 
 void GameFunctions::drawMenu()
 {
-    for (int i = 0; i < 20; i++)
-    {
-        printf_s("_");
-    }
+    for (int i = 0; i < 20; i++) printf_s("_");
     printf_s("\n");
     for (int j = 1; j < 20; j++)
     {
         for (int i = 0; i < 20; i++)
         {
-            if (i == 0 || i == 19)
-                printf_s("|");
-            else
-                printf_s(" ");
+            if (i == 0 || i == 19) printf_s("|");
+            else printf_s(" ");
         }
         printf_s("\n");
     }
-    for (int i = 0; i < 20; i++)
-    {
-        printf_s("_");
-    }
+    for (int i = 0; i < 20; i++) printf_s("_");
 }
 
 
